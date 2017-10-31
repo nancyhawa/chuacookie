@@ -1,0 +1,27 @@
+<form id="contact-form" method="post" action="/contact">
+  <div id="email-error" class="alert alert-danger">
+    We're sorry!  There was an error submitting your email.  Please try again or reach out to us directly at chuacookie411@gmail.com.
+  </div>
+  <div id="email-success" class="alert alert-success">
+    Your email has been sent!  Thank you for contacting us!
+  </div>
+  <div class="form-group">
+    <label for="name">Your Name</label>
+      <input id="name" class="form-control" type="text" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="from">Your Email Address</label>
+      <input id="from" class="form-control" type="email" name="from" required>
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+      <input id="subject" class="form-control" type="text" name="subject" required>
+    
+  </div>
+  <div class="form-group">
+    <label for="text">Email Body</label>
+      <textarea id="text" class="form-control" type="text" name="text" rows="8"required></textarea>
+    
+  </div>
+  <button class="btn" type="submit">Send Email</button>
+</form>

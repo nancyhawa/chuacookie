@@ -1,0 +1,142 @@
+{{> rotatinggallery}}
+
+
+<h1 class="center quote-inquiry-header">Inquire for a Custom Quote</h1>
+
+<form id="quote-form" method="post" action="/quote">
+
+  <div id="quote-error" class="alert alert-danger">
+    We're sorry!  There was an error submitting your quote request.  Please try again or reach out to us directly at chuacookie411@gmail.com.
+  </div>
+  <div id="quote-success" class="alert alert-success">
+    Your quote inquiry has been sent!  We'll be getting back to you shortly!
+  </div>
+  
+  
+  <div class="form-row">
+    <div class="form-element">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input id="name" class="form-control" type="text" name="name" required>
+      </div>
+    </div>
+    <div class="form-element">
+      <div class="form-group">
+        <label for="from">Your Email Address</label>
+        <input id="from" class="form-control" type="email" name="from" required>
+      </div>
+    </div>
+    <div class="form-element">
+      <div class="form-group">
+        <label for="theme">Theme of Event</label>
+        <input id="theme" class="form-control" type="text" name="theme">
+      </div>
+    </div>
+    <div class="form-element">
+      <div class="form-group">
+        <label for="quantity">Approximate Quantity</label>
+        <input id="quantity" class="form-control" type="text" name="quantity" required>
+      </div>
+    </div>
+  </div>  
+  <div class="form-row">
+    <div class="form-element">
+      <div class="form-group">
+        <label for="event_date">Date of Event</label>
+        <input id="event_date" class="form-control" type="date" name="event_date" required>
+      </div>
+    </div>
+    <div class="form-element">
+      <div class="form-group">
+        <label for="pickup_date">Pickup Date</label>
+        <input id="pickup_date" class="form-control" type="date" name="pickup_date" required>
+      </div>
+    </div>
+  </div>
+  <div id="cookie-options">
+  <h3>Cookie Options</h3>
+  <p>Choose as many as you'd like!</p>
+      <div id="cookie-choices" class="form-row">
+        <div class="form-check form-element">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="favors" name="cookie_choices[]">
+            Favors
+          </label>
+          <fieldset class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="favor-packaging" id="heat-sealed" value="heat sealed">
+                  Heat Sealed
+              </label>
+            </div>        
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="favor-packaging" id="hand-tied-bow" value="hand tied bow">
+                  Hand Tied Bow
+              </label>
+            </div>        
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="favor-packaging" id="individually-boxed" value="individually-boxed">
+                  Individually Boxed
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-check form-element">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="giftbox" name="cookie_choices[]">
+            Giftbox
+          </label>
+          <fieldset id="gift-box-sizes" class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="giftbox-size" value="small">
+                  Small
+              </label>
+            </div>        
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="giftbox-size" value="medium">
+                  Medium
+              </label>
+            </div>        
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="giftbox-size" value="large">
+                  Large
+              </label>
+            </div>
+          </fieldset>        
+        </div>
+        <div class="form-element">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="3D Cookies" name="cookie_choices[]">
+            3D Cookies <p>(Like letters, names, boxes, or the Ultimate Gingerbreat House)</p>
+          </label>
+        </div>
+        <div class="form-element">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="Large Plaque" name="cookie_choices[]">
+            Large Plaque <p>(Hand painted or pressure piped portrait)</p>
+          </label>
+        </div>
+        <div class="form-check form-element">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="platter" name="cookie_choices[]">
+            Platter
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+      
+      <div class="form-group">
+        <label for="text">Additonal Comments</label>
+          <textarea id="text" class="form-control" type="text" name="additional_comments" rows="8"required></textarea>
+
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+</form>
